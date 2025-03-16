@@ -1,11 +1,11 @@
 import React from "react";
 import partner1 from "../assets/Images/Terado Eng 02.png"; // Example logo
-import partner2 from "../assets/Images/Viva Group Icon.png";
+import partner2 from "../assets/Images/vivagroup.png";
 import partner3 from "../assets/Images/Simpolo 06.png";
 import partner4 from "../assets/Images/Rustomjee Logo 04.png";
 import partner5 from "../assets/Images/PT Logo 03.png";
 import partner6 from "../assets/Images/Prakriti 01.png";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../context/ThemeContext";a
 
 const partners = [partner1, partner2, partner3, partner4, partner5, partner6];
 
