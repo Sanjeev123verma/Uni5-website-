@@ -5,7 +5,7 @@ import partner3 from "../assets/Images/Simpolo 06.png";
 import partner4 from "../assets/Images/Rustomjee Logo 04.png";
 import partner5 from "../assets/Images/PT Logo 03.png";
 import partner6 from "../assets/Images/Prakriti 01.png";
-import { useTheme } from "../context/ThemeContext";a
+import { useTheme } from "../context/ThemeContext";
 
 const partners = [partner1, partner2, partner3, partner4, partner5, partner6];
 
