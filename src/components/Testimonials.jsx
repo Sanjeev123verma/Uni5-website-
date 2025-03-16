@@ -5,7 +5,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import logo1 from "../assets/Images/Simpolo 06.png";
 import logo2 from "../assets/Images/AD Factor Logo 07.png";
 import logo3 from "../assets/Images/Prakriti 01.png";
-import logo4 from "../assets/Images/Viva Group icon.png";
+import logo4 from "../assets/Images/Viva Group Icon.png";
 
 const testimonials = [
   {
