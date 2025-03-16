@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import lightLogo from "../assets/Images/Logo (2).png";
 import darkLogo from "../assets/Images/Logo.svg";
-import PlayStore from "../assets/Images/Play store Icon.png";
+import PlayStore from "../assets/Images/Play Store Icon.png";
 import AppStore from "../assets/Images/Appsotre Icon.png";
 import Certification from "../assets/Images/certification.png";
 import { BsGlobe2 } from "react-icons/bs";
