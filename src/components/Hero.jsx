@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Partners from './Partners';
 import Dashboard from './Dashboard';
 import Testimonials from './Testimonials';
-import MobileApp from './Mobileapp';
+import MobileApp from './MobileApp';
 import ContactSection from './ContactSection';
 import FAQSection from './FAQSection';
 import { useTheme } from '../context/ThemeContext';
