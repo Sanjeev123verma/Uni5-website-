@@ -9,14 +9,16 @@ import MobileApp from './MobileApp';
 import ContactSection from './ContactSection';
 import FAQSection from './FAQSection';
 import { useTheme } from '../context/ThemeContext';
+import { Spotlight } from './ui/spotlight-new';
 
 const Hero = () => {
     const {isDarkMode} = useTheme()
     
     return (
   
-    <div className= {`flex flex-col items-center ${isDarkMode ? 'bg-[#121212] text-white' : 'bg-white text-[#121212]'}`}>     
-        <Header/>
+    <div className= {`flex flex-col items-center ${isDarkMode ? 'bg-[#121212] text-white' : 'bg-white text-[#121212]'}`}>  
+        <Spotlight/>   
+         <Header/>
         <Features/>
         <Partners/>
         <Dashboard/>
