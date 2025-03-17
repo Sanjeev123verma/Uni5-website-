@@ -97,7 +97,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-gray-400 text-sm gap-4 text-center md:text-left">
-        <p className="text-white flex items-center gap-1"><BsGlobe2 /> English (UK)</p>
+        <p className="flex items-center gap-1"><BsGlobe2 /> English (UK)</p>
         <p>© 2025 UNI5. All rights reserved. <span className="underline cursor-pointer">Privacy Policy</span></p>
 
         {/* Social Icons */}

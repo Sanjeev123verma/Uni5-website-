@@ -44,10 +44,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="max-w-[1280px] mx-auto text-white py-16">
+    <div className="max-w-[1280px] mx-auto py-16">
       {/* Heading Section */}
       <div className="text-center mb-12">
-        <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-sm rounded-lg">
+        <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-sm rounded-lg text-white">
           Client Testimonials
         </button>
         <h2 className="text-3xl md:text-5xl font-bold mt-4 leading-tight">

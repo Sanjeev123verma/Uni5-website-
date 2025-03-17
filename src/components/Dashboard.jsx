@@ -10,9 +10,9 @@ const FeatureCard = ({ title, description }) => (
 
 const Dashboard = () => {
   return (
-    <div className="max-w-[1280px] mx-auto text-white py-16 flex flex-col items-center">
+    <div className="max-w-[1280px] mx-auto py-16 flex flex-col items-center">
       {/* Heading Section */}
-      <button className="mb-4 px-4 py-2 border bg-gradient-to-b from-stone-900 to-stone-800 rounded-lg">
+      <button className="mb-4 px-4 py-2 border bg-gradient-to-b from-stone-900 to-stone-800 rounded-lg text-white">
         Why UNI5?
       </button>
       <h1 className="text-4xl font-bold text-center">
