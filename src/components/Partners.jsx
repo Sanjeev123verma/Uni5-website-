@@ -13,12 +13,14 @@ const Partners = () => {
   const { isDarkMode } = useTheme();
 
   return (
-  <>
-     <p className="items-center text-center m-6">Partnering with top industry experts </p>
-    <div className="max-w-[1280px] w-[90%] md:w-[80%] overflow-hidden py-4">
-      <div className="flex w-max animate-scroll">
-        {partners.concat(partners).map((logo, index) => (
-          <div
+    <div className="max-w-[1280px] mx-auto py-8">
+      <p className="text-center text-lg font-semibold mb-6">
+        Partnering with top industry experts
+      </p>
+      <div className="w-full overflow-hidden py-4">
+        <div className="flex w-max animate-scroll">
+          {partners.concat(partners).map((logo, index) => (
+            <div
               key={index}
               className={`${!isDarkMode ? "bg-black p-2" : ""} flex items-center`}
             >
@@ -28,12 +30,11 @@ const Partners = () => {
                 className="w-28 h-10 mx-8"
               />
             </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-    </>
   );
 };
 
 export default Partners;
-

@@ -11,29 +11,34 @@ import { useTheme } from "../context/ThemeContext";
 const Footer = () => {
   const { isDarkMode } = useTheme();
   return (
-    <footer className="w-full sm:w-11/12 md:w-9/10 lg:w-4/5 xl:w-4/5 max-w-[1280px] mx-auto px-4 sm:px-4 lg:px-2 text-white py-10">
+    <footer className="w-full max-w-[1280px] mx-auto text-white py-10">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-gray-400 text-sm">
-        {/* Left Section - Logo & Additional Images */}
-        <div className="flex items-center gap-8">
-        <img
-        src={isDarkMode ? darkLogo : lightLogo}
-        alt="Logo"
-        className="mb-2 h-12 w-auto"
-      />
-          <img src={Certification} alt="Certification" className="h-12 bg-black p-2 rounded-2xl" />
+      <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-6">
+        {/* Left Section - Logo & Certification */}
+        <div className="flex flex-col sm:flex-row items-center gap-6">
+          <img
+            src={isDarkMode ? darkLogo : lightLogo}
+            alt="Logo"
+            className="h-12 w-auto"
+          />
+          <img
+            src={Certification}
+            alt="Certification"
+            className="h-12 bg-black p-2 rounded-2xl"
+          />
         </div>
 
         {/* Right Section - App Store Buttons */}
-        <div className="flex gap-4 mt-4 md:mt-0">
+        <div className="flex flex-col sm:flex-row gap-4">
           <img src={AppStore} alt="Download on App Store" className="h-10 cursor-pointer" />
           <img src={PlayStore} alt="Get it on Google Play" className="h-10 cursor-pointer" />
         </div>
       </div>
+
       <div className="w-full border-t border-gray-700 my-6"></div>
 
       {/* Middle Section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
         {/* About */}
         <div>
           <h3 className="text-lg font-semibold">About UNI5</h3>
@@ -91,12 +96,12 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-gray-400 text-sm">
-        <p className="text-white flex items-center gap-1"><BsGlobe2 /> English(UK) </p>
+      <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-gray-400 text-sm gap-4 text-center md:text-left">
+        <p className="text-white flex items-center gap-1"><BsGlobe2 /> English (UK)</p>
         <p>© 2025 UNI5. All rights reserved. <span className="underline cursor-pointer">Privacy Policy</span></p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 mt-4 md:mt-0">
+        <div className="flex gap-4">
           <FaFacebookF className="text-xl cursor-pointer hover:text-gray-200" />
           <FaLinkedinIn className="text-xl cursor-pointer hover:text-gray-200" />
           <FaTwitter className="text-xl cursor-pointer hover:text-gray-200" />
