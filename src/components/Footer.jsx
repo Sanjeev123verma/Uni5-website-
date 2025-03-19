@@ -38,20 +38,20 @@ const Footer = () => {
       <div className="w-full border-t border-gray-700 my-6"></div>
 
       {/* Middle Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 leading-8">
         {/* About */}
         <div>
-          <h3 className="text-lg font-semibold">About UNI5</h3>
-          <p className="text-gray-400 mt-2 text-sm">
+          <h3 className="text-lg font-medium">About UNI5</h3>
+          <p className="text-gray-400 mt-2 text-sm leading-7 tracking-wider">
             Especially for you, we have prepared short stories of our users who agreed to share their opinions on our application.
             The main tests were carried out on performance and application stabilization.
           </p>
         </div>
 
         {/* Product Links */}
-        <div>
+        <div className="md:ml-8">
           <h3 className="text-lg font-semibold">Product</h3>
-          <ul className="mt-2 space-y-1 text-gray-400 text-sm">
+          <ul className="mt-2 space-y-1 text-gray-400 text-sm leading-6 tracking-wider">
             <li>Recruitment Software</li>
             <li>Attendance Management</li>
             <li>Performance Management</li>
@@ -64,7 +64,7 @@ const Footer = () => {
         {/* Resources */}
         <div>
           <h3 className="text-lg font-semibold">Resources</h3>
-          <ul className="mt-2 space-y-1 text-gray-400 text-sm">
+          <ul className="mt-2 space-y-1 text-gray-400 text-sm leading-6 tracking-wider">
             <li>Blog</li>
             <li>HR Glossary</li>
           </ul>

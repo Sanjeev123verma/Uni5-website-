@@ -15,7 +15,7 @@ const Dashboard = () => {
       <button className="mb-4 px-4 py-2 border bg-gradient-to-b from-stone-900 to-stone-800 rounded-lg text-white">
         Why UNI5?
       </button>
-      <h1 className="text-4xl font-bold text-center">
+      <h1 className="text-5xl font-medium text-center">
         Work Smarter And <span className="text-[#DB272D]">Stay Ahead With UNI5</span>
       </h1>
       <p className="text-gray-400 text-center mt-4 max-w-2xl">

@@ -50,7 +50,7 @@ const Testimonials = () => {
         <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-sm rounded-lg text-white">
           Client Testimonials
         </button>
-        <h2 className="text-3xl md:text-5xl font-bold mt-4 leading-tight">
+        <h2 className="text-3xl md:text-5xl font-medium mt-4 leading-tight">
           Gain Valuable Insights <br />
           <span className="text-[#DB272D]">From HR Leaders Just Like You</span>
         </h2>

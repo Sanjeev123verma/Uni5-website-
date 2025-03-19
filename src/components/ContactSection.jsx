@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { SlLocationPin } from "react-icons/sl";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineForwardToInbox } from "react-icons/md";
 import { useTheme } from "../context/ThemeContext";
+import ModalForm from "./ModalForm";
 
 const ContactSection = () => {
   const { isDarkMode } = useTheme();
+   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div
@@ -60,10 +62,10 @@ const ContactSection = () => {
 
         {/* Right: Contact Info */}
         <div className="w-full lg:w-1/2">
-          <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-white text-sm rounded-lg mb-4">
+          <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-white text-sm rounded-lg mb-4 cursor-pointer" onClick={() => setIsModalOpen(true)}>
             Connect With Us
           </button>
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-medium">
             Get In <span className="text-[#DB272D]">Touch</span>
           </h2>
           <p className="text-lg mt-4 text-gray-400 max-w-2xl">
@@ -101,6 +103,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
+        {isModalOpen && <ModalForm onClose={() => setIsModalOpen(false)} />}
       </div>
     </div>
   );

@@ -34,25 +34,25 @@ const FAQSection = () => {
 
   return (
     <div
-      className={`max-w-[1280px] mx-auto py-16 ${
+      className={`max-w-[1280px] mx-auto py-16 flex flex-col md:flex-row justify-between gap-12 px-2 ${
         isDarkMode ? "text-white" : "text-black"
       }`}
     >
       {/* Heading */}
-      <div className="mb-12 text-center">
-        <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-sm text-white rounded-lg mb-4">
+      <div className="md:w-1/2">
+        <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-sm text-white rounded-lg mb-6">
           FAQs?
         </button>
-        <h2 className="text-3xl md:text-5xl font-bold">
-          Frequently Asked <span className="text-[#DB272D]">Questions</span>
+        <h2 className="text-3xl md:text-5xl font-medium mb-6">
+          Frequently Asked <span className="text-[#DB272D] mt-4 block">Questions</span>
         </h2>
-        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+        <p className="text-gray-400 max-w-xl">
           We provide answers to common questions about our products and services.
         </p>
       </div>
 
       {/* FAQ List */}
-      <div className="space-y-6">
+      <div className="md:w-1/2 space-y-6">
         {faqs.map((faq, index) => (
           <div
             key={index}
@@ -64,7 +64,7 @@ const FAQSection = () => {
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">
-              <h3 className="text-lg md:text-xl font-medium">{faq.question}</h3>
+              <h3 className="text-lg md:text-xl font-normal">{faq.question}</h3>
               <span className="text-xl font-bold transition-transform duration-200">
                 {openIndex === index ? "−" : "+"}
               </span>

@@ -14,7 +14,7 @@ const MobileApp = () => {
         <button className="px-4 py-2 bg-gradient-to-b from-stone-900 to-stone-800 border text-sm rounded-lg text-white">
           Mobile App
         </button>
-        <h2 className="text-3xl md:text-5xl font-bold mt-4 leading-tight">
+        <h2 className="text-3xl md:text-5xl font-medium mt-4 leading-tight">
           UNI5 Application Trusted <br />
           By Employees <span className="text-[#DB272D]">Globally</span>
         </h2>

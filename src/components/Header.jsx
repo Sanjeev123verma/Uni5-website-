@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; 
+import { Link } from "react-router-dom";
 import logo from "../assets/Images/Logo.svg";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { useTheme } from "../context/ThemeContext";
@@ -17,7 +18,7 @@ const Header = () => {
       {/* Centering content inside the container */}
       <div className="max-w-[1280px] mx-auto">
         <nav className="bg-stone-800 rounded-xl mb-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-4 mx-4">
             {/* Left Side - Logo */}
             <div className="pl-1">
               <img src={logo} alt="logo" className="rounded-lg md:w-full md:h-12" />
@@ -25,11 +26,11 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 items-center">
-              <a href="#" className="text-white hover:text-gray-400">Our Platform</a>
-              <a href="#" className="text-white hover:text-gray-400">Pricing</a>
-              <a href="#" className="text-white hover:text-gray-400">Why UNI5?</a>
-              <a href="#" className="text-white hover:text-gray-400">Resources</a>
-              <a href="#" className="text-white hover:text-gray-400">About Us</a>
+              <Link to="/" className="text-white hover:text-gray-400">Our Platform</Link>
+              <Link to="/pricing" className="text-white hover:text-gray-400">Pricing</Link>
+              <Link to="#" className="text-white hover:text-gray-400">Why UNI5?</Link>
+              <Link to="#" className="text-white hover:text-gray-400">Resources</Link>
+              <Link to="#" className="text-white hover:text-gray-400">About Us</Link>
 
               {/* Dark Mode Toggle */}
               <button onClick={toggleTheme} className="text-white text-2xl px-2">
